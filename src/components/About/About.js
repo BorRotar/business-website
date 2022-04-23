@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Sakura from "../../assets/images/SakuraContrast.jpg";
-import Projects from "./Projects";
+import Projects, { fifthProject, fourthProject, secondProject, thirdProject } from "./Projects";
 
 const About = () => {
   const [firstHover, setFirstHover] = useState(null);
@@ -44,28 +44,28 @@ const About = () => {
 
   return (
     <div className="relative top-80 left-5 lg:max-w-5xl lg:gap-x-20 lg:grid-cols-2">
-      <div className="grid grid-flow-col grid-rows-2 grid-cols-3 gap-8">
-        <div onMouseEnter={onFirstHover} onMouseLeave={onFirstLeave}>
-          {firstHover ? <div>{<Projects />}</div> : <img src={Sakura} alt="" />}
+      <div className="grid grid-flow-col grid-rows-2 grid-cols-3 gap-8 resize-none">
+        <div className="relative top-0 left-0" onMouseEnter={onFirstHover} onMouseLeave={onFirstLeave}>
+          {firstHover ? <div className="">{<Projects />}</div> : <img src={Sakura} alt="" />}
         </div>
-        <div className="col-start-3">
-          <div onMouseEnter={onSeocndHover} onMouseLeave={onSecondLeave}>
-            {secondHover ? "Visible text" : <img src={Sakura} alt="" />}
+        <div className="col-start-3 max-w-md">
+          <div className="position-absolute" onMouseEnter={onSeocndHover} onMouseLeave={onSecondLeave}>
+            {secondHover ? <div className="w-30">{secondProject}</div> : <img src={Sakura} alt="" />}
           </div>
         </div>
         <div>
           <div onMouseEnter={onThirdHover} onMouseLeave={onThirdLeave}>
-            {thirdHover ? "Visible text" : <img src={Sakura} alt="" />}
+            {thirdHover ? <div className="w-30">{thirdProject}</div> : <img src={Sakura} alt="" />}
           </div>
         </div>
         <div>
           <div onMouseEnter={onFourthHover} onMouseLeave={onFourthLeave}>
-            {fourthHover ? "Visible text" : <img src={Sakura} alt="" />}
+            {fourthHover ? <div className="max-w-prose">{fourthProject}</div> : <img src={Sakura} alt="" />}
           </div>
         </div>
-        <div className="row-start-1 col-start-2 col-span-2">
-          <div onMouseEnter={onFifthHover} onMouseLeave={onFifthLeave}>
-            {fifthHover ? "Visible text" : <img src={Sakura} alt="" />}
+        <div className="row-start-1 col-start-2 col-span-2 max-h-8 resize-none">
+          <div className="position-absolute" onMouseEnter={onFifthHover} onMouseLeave={onFifthLeave}>
+            {fifthHover ? <div className="">{fifthProject}</div> : <img className="" src={Sakura} alt="" />}
           </div>
         </div>
       </div>
