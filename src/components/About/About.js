@@ -1,6 +1,7 @@
-import { useState } from "react";
+import { Fragment, useState } from "react";
 import Sakura from "../../assets/images/SakuraContrast.jpg";
-import Projects, { fifthProject, fourthProject, secondProject, thirdProject } from "./Projects";
+import Carousel from "../Carousel/Carousel";
+import Projects, { fourthProject, secondProject, thirdProject } from "./Projects";
 
 const About = () => {
   const [firstHover, setFirstHover] = useState(null);
@@ -34,38 +35,33 @@ const About = () => {
     setFourthHover(false);
   };
 
-  const [fifthHover, setFifthHover] = useState(null);
-  const onFifthHover = () => {
-    setFifthHover(true);
-  };
-  const onFifthLeave = () => {
-    setFifthHover(false);
-  };
-
   return (
-    <div className="grow-0 relative top-80 grid grid-cols-4 gap-4">
+    <Fragment>
+    <div className="grow-0 mx-8 relative top-96 grid grid-cols-4 gap-8">
      
-        <div  onMouseEnter={onFirstHover} onMouseLeave={onFirstLeave}>
-          {firstHover ? <div className="">{<Projects />}</div> : <img src={Sakura} alt="" />}
+        <div className="outline hover:outline-2 rounded-md" onMouseEnter={onFirstHover} onMouseLeave={onFirstLeave}>
+          {firstHover ? <div className="mx-4 my-2">{<Projects />}</div> : <img src={Sakura} alt="" />}
         </div>
-        <div >
-          <div className="" onMouseEnter={onSeocndHover} onMouseLeave={onSecondLeave}>
-            {secondHover ? <div className="">{secondProject}</div> : <img src={Sakura} alt="" />}
+        <div className="outline hover:outline-2 rounded-md">
+          <div  onMouseEnter={onSeocndHover} onMouseLeave={onSecondLeave}>
+            {secondHover ? <div  className="mx-4 my-2">{secondProject}</div> : <img src={Sakura} alt="" />}
           </div>
         </div>
-        <div className="overflow-hidden">
+        <div className="outline hover:outline-2 rounded-md">
           <div onMouseEnter={onThirdHover} onMouseLeave={onThirdLeave}>
-            {thirdHover ? <div className="">{thirdProject}</div> : <img src={Sakura} alt="" />}
+            {thirdHover ? <div className="mx-4 my-2">{thirdProject}</div> : <img src={Sakura} alt="" />}
           </div>
         </div>
-        <div>
+        <div className="outline hover:outline-2 rounded-md">
           <div onMouseEnter={onFourthHover} onMouseLeave={onFourthLeave}>
-            {fourthHover ? <div className="">{fourthProject}</div> : <img src={Sakura} alt="" />}
+            {fourthHover ? <div className="mx-4 my-2">{fourthProject}</div> : <img src={Sakura} alt="" />}
           </div>
         </div>
-
       </div>
-
+      <div className="relative top-96 left-8">
+      <Carousel/>
+      </div>
+      </Fragment>
   );
 };
 
