@@ -37,7 +37,7 @@ const About = () => {
 
   return (
     <Fragment>
-    <div className="grow-0 mx-8 relative top-96 grid grid-cols-4 gap-8">
+    <div className="grow-0 mx-8 relative top-80 grid grid-cols-4 gap-8">
      
         <div className="outline hover:outline-2 rounded-md" onMouseEnter={onFirstHover} onMouseLeave={onFirstLeave}>
           {firstHover ? <div className="mx-4 my-2">{<Projects />}</div> : <img src={Sakura} alt="" />}
@@ -58,9 +58,11 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="relative top-96 left-8">
+      <div className="relative top-96 left-96 container flex justify-end">
       <Carousel/>
+      
       </div>
+      
       </Fragment>
   );
 };
