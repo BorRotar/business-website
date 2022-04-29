@@ -1,5 +1,7 @@
 import 'tw-elements';
 import Sakura from "../../assets/images/SakuraContrast.jpg";
+import Space from "../../assets/images/DesolateSpace.jpg";
+import Cropped from "../../assets/images/CroppedSpace.jpg";
 
 const Carousel = () => {
     return (
@@ -40,7 +42,7 @@ const Carousel = () => {
           </div>
           <div className="carousel-item relative float-left w-full">
             <img
-              src="https://mdbootstrap.com/img/Photos/Slides/img%20(22).jpg"
+              src={Space}
               className="block w-full"
               alt="..."
             />
@@ -51,7 +53,7 @@ const Carousel = () => {
           </div>
           <div className="carousel-item relative float-left w-full">
             <img
-              src="https://mdbootstrap.com/img/Photos/Slides/img%20(23).jpg"
+              src={Cropped}
               className="block w-full"
               alt="..."
             />

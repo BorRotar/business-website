@@ -39,7 +39,7 @@ const About = () => {
     <Fragment>
     <div className="grow-0 mx-8 relative top-80 grid grid-cols-4 gap-8">
      
-        <div className="outline hover:outline-2 rounded-md" onMouseEnter={onFirstHover} onMouseLeave={onFirstLeave}>
+        <div className="outline hover:outline-2 rounded-md md:text-clip" onMouseEnter={onFirstHover} onMouseLeave={onFirstLeave}>
           {firstHover ? <div className="mx-4 my-2">{<Projects />}</div> : <img src={Sakura} alt="" />}
         </div>
         <div className="outline hover:outline-2 rounded-md">
@@ -58,7 +58,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="relative top-96 left-96 container flex justify-end">
+      <div className="relative top-96 2xl:left-96 container flex justify-end sm:left-36">
       <Carousel/>
       
       </div>

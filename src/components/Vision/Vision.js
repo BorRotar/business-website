@@ -15,7 +15,7 @@ const Vision = () => {
         mollit anim id est laborum.
       </p>
     </div>
-    <div className="container absolute bottom-64 left-60">
+    <div className="container relative float-rigth top-80">
     <img className="w-96 rounded-full mx-auto" src={Sakura} alt='Beautiful sakura trees'/>
     </div>
     </Fragment>
