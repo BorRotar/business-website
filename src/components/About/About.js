@@ -37,28 +37,28 @@ const About = () => {
 
   return (
     <Fragment>
-    <div className="grow-0 mx-8 relative top-80 grid grid-cols-4 gap-8">
+    <div className="mx-8 relative top-80 grid grid-cols-4 gap-8">
      
-        <div className="outline hover:outline-2 rounded-md md:text-clip" onMouseEnter={onFirstHover} onMouseLeave={onFirstLeave}>
-          {firstHover ? <div className="mx-4 my-2">{<Projects />}</div> : <img src={Sakura} alt="" />}
+        <div className="outline hover:outline-2 rounded-md md:text-clip grow-0" onMouseEnter={onFirstHover} onMouseLeave={onFirstLeave}>
+          {firstHover ? <div className="mx-4 my-2 h-48 overflow-scroll">{<Projects />}</div> : <img src={Sakura} alt="" />}
         </div>
         <div className="outline hover:outline-2 rounded-md">
           <div  onMouseEnter={onSeocndHover} onMouseLeave={onSecondLeave}>
-            {secondHover ? <div  className="mx-4 my-2">{secondProject}</div> : <img src={Sakura} alt="" />}
+            {secondHover ? <div  className="mx-4 my-2 h-48">{secondProject}</div> : <img src={Sakura} alt="" />}
           </div>
         </div>
         <div className="outline hover:outline-2 rounded-md">
           <div onMouseEnter={onThirdHover} onMouseLeave={onThirdLeave}>
-            {thirdHover ? <div className="mx-4 my-2">{thirdProject}</div> : <img src={Sakura} alt="" />}
+            {thirdHover ? <div className="mx-4 my-2 h-48">{thirdProject}</div> : <img src={Sakura} alt="" />}
           </div>
         </div>
         <div className="outline hover:outline-2 rounded-md">
           <div onMouseEnter={onFourthHover} onMouseLeave={onFourthLeave}>
-            {fourthHover ? <div className="mx-4 my-2">{fourthProject}</div> : <img src={Sakura} alt="" />}
+            {fourthHover ? <div className="mx-4 my-2 h-48">{fourthProject}</div> : <img src={Sakura} alt="" />}
           </div>
         </div>
       </div>
-      <div className="relative top-96 2xl:left-96 container flex justify-end sm:left-36">
+      <div className="relative top-96 container object-fit flex justify-end">
       <Carousel/>
       
       </div>
