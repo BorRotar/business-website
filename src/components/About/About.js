@@ -40,7 +40,7 @@ const About = () => {
     <div className="mx-8 relative top-80 grid grid-cols-4 gap-8">
      
         <div className="outline hover:outline-2 rounded-md md:text-clip grow-0" onMouseEnter={onFirstHover} onMouseLeave={onFirstLeave}>
-          {firstHover ? <div className="mx-4 my-2 h-48 overflow-scroll">{<Projects />}</div> : <img src={Sakura} alt="" />}
+          {firstHover ? <div className="mx-4 my-2 md:h-24 xl:h-48 md:overflow-scroll xl:overflow-hidden">{<Projects />}</div> : <img src={Sakura} alt="" />}
         </div>
         <div className="outline hover:outline-2 rounded-md">
           <div  onMouseEnter={onSeocndHover} onMouseLeave={onSecondLeave}>

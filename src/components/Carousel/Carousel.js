@@ -1,11 +1,11 @@
 import 'tw-elements';
-import Sakura from "../../assets/images/SakuraContrast.jpg";
-import Space from "../../assets/images/DesolateSpace.jpg";
+
+
 import Cropped from "../../assets/images/CroppedSpace.jpg";
 
 const Carousel = () => {
     return (
-        <div id="carouselExampleCaptions" className="carousel slide relative bottom-4 md:left-8 left-96" data-bs-ride="carousel">
+        <div id="carouselExampleCaptions" className="carousel slide relative bottom-4 md:left-8 xl:left-96" data-bs-ride="carousel">
         <div className="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
           <button
             type="button"
@@ -31,7 +31,7 @@ const Carousel = () => {
         <div className="carousel-inner relative w-full overflow-hidden">
           <div className="carousel-item active relative float-left w-full">
             <img
-              src={Sakura}
+              src={Cropped}
               className="block w-full "
               alt="..."
             />
@@ -42,7 +42,7 @@ const Carousel = () => {
           </div>
           <div className="carousel-item relative float-left w-full">
             <img
-              src={Space}
+              src={Cropped}
               className="block w-full"
               alt="..."
             />
