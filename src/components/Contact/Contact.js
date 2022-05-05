@@ -1,13 +1,26 @@
-
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 const Contact = () => {
-  
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_rfpu89s', 'template_r9362sc', form.current, 'Am-qtnqXH6IAnbHiG')
+      .then(() => {
+          alert("Message sent successfully!");
+          window.location.reload(false)
+      }, () => {
+          alert("Something went wrong, please try again");
+      });
+    }
     return (
       <div className="relative top-96 flex justify-center w-full">
       <div className="block p-6 rounded-lg shadow-lg bg-white max-w-md w-1/3">
-  <form>
+  <form ref={form} onSubmit={sendEmail}>
     <div className="form-group mb-6">
-      <input type="text" className="form-control block
+      <input type="text" name='from_name' className="form-control block
         w-full
         px-3
         py-1.5
@@ -24,7 +37,7 @@ const Contact = () => {
         placeholder="Name" />
     </div>
     <div className="form-group mb-6">
-      <input type="email" className="form-control block
+      <input type="email" name='from_email' className="form-control block
         w-full
         px-3
         py-1.5
@@ -42,6 +55,7 @@ const Contact = () => {
     </div>
     <div className="form-group mb-6">
       <textarea
+      name='message'
       className="
         form-control
         block
@@ -64,7 +78,7 @@ const Contact = () => {
       placeholder="Message"
     ></textarea>
     </div>
-    <button type="submit" className="
+    <button type="submit" value="Send" className="
       w-full
       px-6
       py-2.5
