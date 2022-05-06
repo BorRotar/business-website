@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { Fragment, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
 const Contact = () => {
@@ -16,7 +16,8 @@ const Contact = () => {
       });
     }
     return (
-      <div className="relative top-96 flex justify-center w-full">
+<Fragment>
+<div className="relative top-96 flex w-full justify-center w-100">
       <div className="block p-6 rounded-lg shadow-lg bg-white max-w-md w-1/3">
   <form ref={form} onSubmit={sendEmail}>
     <div className="form-group mb-6">
@@ -97,8 +98,35 @@ const Contact = () => {
       duration-150
       ease-in-out">Send</button>
   </form>
+ 
+
 </div>
+
 </div>
+<div className="relative top-96 left-96 flex w-full justify-center w-100">
+  <figure className="bg-slate-100 rounded-xl p-8 dark:bg-slate-800 w-96">
+  <img className="w-24 h-24 rounded-full" src="/sarah-dayan.jpg" alt="" width="384" height="512"/>
+  <div className="pt-6 space-y-4">
+    <blockquote>
+      <p className="text-lg">
+        “Tailwind CSS is the only framework that I've seen scale
+        on large teams. It’s easy to customize, adapts to any design,
+        and the build size is tiny.”
+      </p>
+    </blockquote>
+    <figcaption>
+      <div>
+        Sarah Dayan
+      </div>
+      <div>
+        Staff Engineer, Algolia
+      </div>
+    </figcaption>
+  </div>
+</figure></div>
+
+
+</Fragment>
     )
 }
 
