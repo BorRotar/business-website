@@ -1,7 +1,8 @@
-
+import { Link } from "react-router-dom";
 import Green from "../../assets/images/GreenEnergy.png";
+import TextContext from "../../context/text-context";
 
-const Vision = () => {
+const Vision = (props) => {
   return (
     <div className="absolute flex mb-4 top-96 left-4 right-4 gap-8">
       <div className="w-1/2 flex justify-center flex-wrap">
@@ -21,33 +22,40 @@ const Vision = () => {
             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
-            <ul className="list-disc mx-4 my-4">
-              <li className=" text-2xl">
-                <a
-                  href="#!"
-                  className="text-emerald-500 hover:text-emerald-600 transition duration-300 ease-in-out mb-4"
-                >
-                  Success link
-                </a>
-              </li>
-              <li className=" text-2xl">
-                <a
-                  href="#!"
-                  class="text-emerald-400 hover:text-emerald-500 transition duration-300 ease-in-out mb-4"
-                >
-                  Success link
-                </a>
-              </li>
-              <li className=" text-2xl">
-                <a
-                  href="#!"
-                  class="text-emerald-300 hover:text-emerald-400 transition duration-300 ease-in-out mb-4"
-                >
-                  Success link
-                </a>
-              </li>
-            </ul>
           </p>
+          <TextContext.Consumer>
+            {(ctx) => {
+              return (
+<ul className="list-disc mx-4 my-4">
+            <li className=" text-2xl">
+              <Link
+                to={{ pathname: "/contact" }}
+                className="text-emerald-500 hover:text-emerald-600 transition duration-300 ease-in-out mb-4"
+              >
+                Success link
+              </Link>
+            </li>
+            <li className=" text-2xl">
+              <a
+                href="#!"
+                className="text-emerald-400 hover:text-emerald-500 transition duration-300 ease-in-out mb-4"
+              >
+                Success link
+              </a>
+            </li>
+            <li className=" text-2xl">
+              <a
+                href="#!"
+                className="text-emerald-300 hover:text-emerald-400 transition duration-300 ease-in-out mb-4"
+              >
+                Success link
+              </a>
+            </li>
+          </ul>
+              )
+            }}
+          
+          </TextContext.Consumer>
         </div>
       </div>
 

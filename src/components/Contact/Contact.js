@@ -75,6 +75,30 @@ const Contact = () => {
               />
             </div>
             <div className="form-group mb-6">
+              <select
+                className="form-control block
+        w-full
+        px-3
+        py-1.5
+        text-base
+        font-normal
+        text-gray-700
+        bg-white bg-clip-padding
+        border border-solid border-gray-300
+        rounded
+        transition
+        ease-in-out
+        m-0
+        focus:text-gray-700 focus:bg-white focus:border-emerald-600 focus:outline-none"
+                aria-label="Default select example"
+              >
+                <option defaultValue>Open this select menu</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+            <div className="form-group mb-6">
               <textarea
                 name="message"
                 className="
@@ -137,18 +161,10 @@ const Contact = () => {
           />
           <div className="pt-6 space-y-4">
             <blockquote>
-              <p className="text-lg">
-                Asdf Ffff
-              </p>
-              <p className="text-lg">
-                Address 34
-              </p>
-              <p className="text-lg">
-              email@email
-              </p>
-              <p className="text-lg">
-              123 123 123 123
-              </p>
+              <p className="text-lg">Asdf Ffff</p>
+              <p className="text-lg">Address 34</p>
+              <p className="text-lg">email@email</p>
+              <p className="text-lg">123 123 123 123</p>
             </blockquote>
             <figcaption>
               <div>Consulting LLC</div>
