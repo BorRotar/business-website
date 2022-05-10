@@ -5,7 +5,7 @@ import Cropped from "../../assets/images/CroppedSpace.jpg";
 
 const Carousel = () => {
     return (
-        <div id="carouselExampleCaptions" className="carousel slide relative bottom-4 md:left-8 xl:left-96" data-bs-ride="carousel">
+        <div id="carouselExampleCaptions" className="carousel slide relative bottom-4 md:left-8 2xl:left-96" data-bs-ride="carousel">
         <div className="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
           <button
             type="button"

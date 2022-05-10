@@ -1,24 +1,61 @@
-import Sakura from "../../assets/images/SakuraContrast.jpg";
+
+import Green from "../../assets/images/GreenEnergy.png";
 
 const Vision = () => {
   return (
-    <div className="absolute flex mb-4 top-80 left-4 right-4 gap-8">
+    <div className="absolute flex mb-4 top-96 left-4 right-4 gap-8">
       <div className="w-1/2 flex justify-center flex-wrap">
-        <h1 className="card text-justify w-96">Extremely successfull business</h1>
-        <p className="card text-justify w-96 ">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
+        <div className="w-2/3">
+          <blockquote className="text-5xl font-semibold italic text-center text-slate-900">
+            <span className="before:rounded-sm before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-emerald-500 relative inline-block">
+              <span className="relative text-white">
+                SUPER SUCCESSFUL BUSINESS
+              </span>
+            </span>
+          </blockquote>
+          <p className="card text-justify my-2">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+            <ul className="list-disc mx-4 my-4">
+              <li className=" text-2xl">
+                <a
+                  href="#!"
+                  className="text-emerald-500 hover:text-emerald-600 transition duration-300 ease-in-out mb-4"
+                >
+                  Success link
+                </a>
+              </li>
+              <li className=" text-2xl">
+                <a
+                  href="#!"
+                  class="text-emerald-400 hover:text-emerald-500 transition duration-300 ease-in-out mb-4"
+                >
+                  Success link
+                </a>
+              </li>
+              <li className=" text-2xl">
+                <a
+                  href="#!"
+                  class="text-emerald-300 hover:text-emerald-400 transition duration-300 ease-in-out mb-4"
+                >
+                  Success link
+                </a>
+              </li>
+            </ul>
+          </p>
+        </div>
       </div>
+
       <div className="w-1/2">
         <img
-          className=" rounded-full mx-auto"
-          src={Sakura}
+          className="w-3/5"
+          // color: #67E8F9
+          src={Green}
           alt="Beautiful sakura trees"
         />
       </div>
