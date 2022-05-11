@@ -2,7 +2,11 @@ import React, { Fragment, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Cropped from "../../assets/images/CroppedSpace.jpg";
 
-const Contact = () => {
+
+
+const Contact = (props) => {
+  console.log(props.info);
+  console.log("logged in contact");
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -27,6 +31,7 @@ const Contact = () => {
   };
   return (
     <Fragment>
+      
       <div className="relative top-96 flex w-full justify-center w-100">
         <div className="block p-6 rounded-lg shadow-lg bg-white max-w-md w-1/3">
           <form ref={form} onSubmit={sendEmail}>

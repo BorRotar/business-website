@@ -1,25 +1,27 @@
-import { useState } from "react";
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
 import Navbar from "./components/Navbar/Navbar";
 import Vision from "./components/Vision/Vision";
-import TextContext from "./context/text-context";
+
 
 function App() {
-
-const [textMessage, setTextMessage] = useState(false);
-
+  const  saveDataHandler = (enteredData) => {
+    const data = {
+      enteredData,
+      id: Math.random().toString()
+    };
+    console.log(data);
+  }
   return (
     <Router>
       <Navbar />
       <Routes>
-        <TextContext.Provider value={{ text: false }}>
-          <Route path="/" exact element={<Vision />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-        </TextContext.Provider>
+        <Route path="/" exact element={<Vision onSaveData={saveDataHandler} />}/>
+        <Route path="/about" element={<About info={saveDataHandler}/>} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
     </Router>
   );

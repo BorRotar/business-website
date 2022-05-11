@@ -1,10 +1,11 @@
-import { Link } from "react-router-dom";
 import Green from "../../assets/images/GreenEnergy.png";
-import TextContext from "../../context/text-context";
 
 const Vision = (props) => {
+  
+props.onSaveData("eeeee")
   return (
     <div className="absolute flex mb-4 top-96 left-4 right-4 gap-8">
+      
       <div className="w-1/2 flex justify-center flex-wrap">
         <div className="w-2/3">
           <blockquote className="text-5xl font-semibold italic text-center text-slate-900">
@@ -14,7 +15,9 @@ const Vision = (props) => {
               </span>
             </span>
           </blockquote>
+         
           <p className="card text-justify my-2">
+          
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -23,17 +26,15 @@ const Vision = (props) => {
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
-          <TextContext.Consumer>
-            {(ctx) => {
-              return (
-<ul className="list-disc mx-4 my-4">
+          <ul className="list-disc mx-4 my-4">
             <li className=" text-2xl">
-              <Link
-                to={{ pathname: "/contact" }}
+              <a
+                style={props.onSaveData("ffff")}
+                href="/contact"
                 className="text-emerald-500 hover:text-emerald-600 transition duration-300 ease-in-out mb-4"
               >
                 Success link
-              </Link>
+              </a>
             </li>
             <li className=" text-2xl">
               <a
@@ -52,10 +53,6 @@ const Vision = (props) => {
               </a>
             </li>
           </ul>
-              )
-            }}
-          
-          </TextContext.Consumer>
         </div>
       </div>
 
