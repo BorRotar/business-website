@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Green from "../../assets/images/GreenEnergy.png";
 
 const Vision = (props) => {
@@ -28,29 +29,29 @@ props.onSaveData("eeeee")
           </p>
           <ul className="list-disc mx-4 my-4">
             <li className=" text-2xl">
-              <a
+              <Link
                 style={props.onSaveData("ffff")}
-                href="/contact"
+                to="/contact"
                 className="text-emerald-500 hover:text-emerald-600 transition duration-300 ease-in-out mb-4"
               >
                 Success link
-              </a>
+              </Link>
             </li>
             <li className=" text-2xl">
-              <a
-                href="#!"
+              <Link
+                to="#!"
                 className="text-emerald-400 hover:text-emerald-500 transition duration-300 ease-in-out mb-4"
               >
                 Success link
-              </a>
+              </Link>
             </li>
             <li className=" text-2xl">
-              <a
-                href="#!"
+              <Link
+                to="#!"
                 className="text-emerald-300 hover:text-emerald-400 transition duration-300 ease-in-out mb-4"
               >
                 Success link
-              </a>
+              </Link>
             </li>
           </ul>
         </div>

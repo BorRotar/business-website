@@ -1,6 +1,7 @@
 import { Fragment, useState } from "react";
 import Sakura from "../../assets/images/SakuraContrast.jpg";
-import Carousel from "../Carousel/Carousel";
+import Carousel from "../../components/Carousel/Carousel";
+
 import Projects, { fourthProject, secondProject, thirdProject } from "./Projects";
 
 const About = () => {
