@@ -10,11 +10,10 @@ import Vision from "./pages/Vision/Vision";
 function App() {
 
 const selectionHandler = (enteredSelection) => {
-  const selection = {
-    enteredSelection
-  };
-  console.log(selection);
+  enteredSelection = enteredSelection;
+  console.log(`${enteredSelection} in App`);
 };
+// need to pass the state down
 
   return (
     <Router>

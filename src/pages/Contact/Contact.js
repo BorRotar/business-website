@@ -5,7 +5,7 @@ import Cropped from "../../assets/images/CroppedSpace.jpg";
 
 
 const Contact = (props) => {
- 
+  console.log(props.onSelection);
   console.log("logged in contact");
   const form = useRef();
 

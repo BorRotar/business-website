@@ -5,7 +5,7 @@ import Carousel from "../../components/Carousel/Carousel";
 import Projects, { fourthProject, secondProject, thirdProject } from "./Projects";
 
 const About = (props) => {
-  console.log(props.onSelection);
+  console.log(`${props.onSelection} in About`);
   const [firstHover, setFirstHover] = useState(null);
   const onFirstHover = () => {
     setFirstHover(true);
@@ -14,7 +14,7 @@ const About = (props) => {
     setFirstHover(false);
   };
   const [secondHover, setSecondHover] = useState(null);
-  const onSeocndHover = () => {
+  const onSecondHover = () => {
     setSecondHover(true);
   };
   const onSecondLeave = () => {
@@ -44,7 +44,7 @@ const About = (props) => {
           {firstHover ? <div className="mx-4 my-2 md:h-24 xl:h-48 md:overflow-scroll xl:overflow-hidden">{<Projects />}</div> : <img src={Sakura} alt="" />}
         </div>
         <div className="outline hover:outline-2 rounded-md">
-          <div  onMouseEnter={onSeocndHover} onMouseLeave={onSecondLeave}>
+          <div  onMouseEnter={onSecondHover} onMouseLeave={onSecondLeave}>
             {secondHover ? <div  className="mx-4 my-2 h-48">{secondProject}</div> : <img src={Sakura} alt="" />}
           </div>
         </div>
