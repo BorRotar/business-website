@@ -4,7 +4,8 @@ import Carousel from "../../components/Carousel/Carousel";
 
 import Projects, { fourthProject, secondProject, thirdProject } from "./Projects";
 
-const About = () => {
+const About = (props) => {
+  console.log(props.onSelection);
   const [firstHover, setFirstHover] = useState(null);
   const onFirstHover = () => {
     setFirstHover(true);
@@ -39,7 +40,6 @@ const About = () => {
   return (
     <Fragment>
     <div className="mx-8 relative top-80 grid grid-cols-4 gap-8">
-     
         <div className="outline hover:outline-2 rounded-md md:text-clip grow-0" onMouseEnter={onFirstHover} onMouseLeave={onFirstLeave}>
           {firstHover ? <div className="mx-4 my-2 md:h-24 xl:h-48 md:overflow-scroll xl:overflow-hidden">{<Projects />}</div> : <img src={Sakura} alt="" />}
         </div>

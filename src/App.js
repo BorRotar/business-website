@@ -8,20 +8,21 @@ import Vision from "./pages/Vision/Vision";
 
 
 function App() {
-  const  saveDataHandler = (enteredData) => {
-    const data = {
-      enteredData,
-      id: Math.random().toString()
-    };
-    console.log(data);
-  }
+
+const selectionHandler = (enteredSelection) => {
+  const selection = {
+    enteredSelection
+  };
+  console.log(selection);
+};
+
   return (
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" exact element={<Vision onSaveData={saveDataHandler} />}/>
-        <Route path="/about" element={<About info={saveDataHandler}/>} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/" exact element={<Vision onSelection={selectionHandler} />}/>
+        <Route path="/about" element={<About onSelection={selectionHandler} />} />
+        <Route path="/contact" element={<Contact onSelection={selectionHandler}/>} />
       </Routes>
     </Router>
   );
