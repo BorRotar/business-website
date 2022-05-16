@@ -2,8 +2,6 @@ import React, { Fragment, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Cropped from "../../assets/images/CroppedSpace.jpg";
 
-
-
 const Contact = (props) => {
   console.log(props.onSelection);
   console.log(props.onOption);
@@ -32,7 +30,6 @@ const Contact = (props) => {
   };
   return (
     <Fragment>
-      
       <div className="relative top-96 flex w-full justify-center w-100">
         <div className="block p-6 rounded-lg shadow-lg bg-white max-w-md w-1/3">
           <form ref={form} onSubmit={sendEmail}>
@@ -80,8 +77,9 @@ const Contact = (props) => {
                 placeholder="Email address"
               />
             </div>
-            <div className="form-group mb-6">
+            <div className="form-group mb-6" >
               <select
+                name="from_subject"
                 className="form-control block
         w-full
         px-3

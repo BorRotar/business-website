@@ -42,7 +42,8 @@ const Vision = (props) => {
             </li>
             <li className=" text-2xl">
               <Link
-                to="#!"
+                onClick={() => setValue (props.onOption('bbbbbb'))}
+                to="/contact"
                 className="text-emerald-400 hover:text-emerald-500 transition duration-300 ease-in-out mb-4"
               >
                 Success link
@@ -50,7 +51,8 @@ const Vision = (props) => {
             </li>
             <li className=" text-2xl">
               <Link
-                to="#!"
+                onClick={() => setValue (props.onOption('aaaaaaaa'))}
+                to="/contact"
                 className="text-emerald-300 hover:text-emerald-400 transition duration-300 ease-in-out mb-4"
               >
                 Success link
