@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import About from "./pages/About/About";
@@ -8,9 +8,9 @@ import Vision from "./pages/Vision/Vision";
 
 
 function App() {
-
+const [option, setOption] = useState("");
 const selectionHandler = (enteredSelection) => {
-  enteredSelection = enteredSelection;
+  
   console.log(`${enteredSelection} in App`);
 };
 // need to pass the state down
@@ -19,9 +19,9 @@ const selectionHandler = (enteredSelection) => {
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" exact element={<Vision onSelection={selectionHandler} />}/>
+        <Route path="/" exact element={<Vision onSelection={selectionHandler} onOption={setOption}/>}/>
         <Route path="/about" element={<About onSelection={selectionHandler} />} />
-        <Route path="/contact" element={<Contact onSelection={selectionHandler}/>} />
+        <Route path="/contact" element={<Contact onSelection={selectionHandler} onOption={option}/>} />
       </Routes>
     </Router>
   );

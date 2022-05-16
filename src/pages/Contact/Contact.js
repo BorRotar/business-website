@@ -6,6 +6,7 @@ import Cropped from "../../assets/images/CroppedSpace.jpg";
 
 const Contact = (props) => {
   console.log(props.onSelection);
+  console.log(props.onOption);
   console.log("logged in contact");
   const form = useRef();
 
@@ -97,7 +98,7 @@ const Contact = (props) => {
         focus:text-gray-700 focus:bg-white focus:border-emerald-600 focus:outline-none"
                 aria-label="Default select example"
               >
-                <option defaultValue>Open this select menu</option>
+                <option defaultValue>{props.onOption}</option>
                 <option value="1">One</option>
                 <option value="2">Two</option>
                 <option value="3">Three</option>
