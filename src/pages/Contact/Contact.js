@@ -30,8 +30,8 @@ const Contact = (props) => {
   };
   return (
     <Fragment>
-      <div className="relative top-96 flex w-full justify-center w-100">
-        <div className="block p-6 rounded-lg shadow-lg bg-white max-w-md w-1/3">
+      <div className="relative top-96 flex justify-center w-100">
+        <div className="block p-6 rounded-lg shadow-lg bg-white max-w-md w-2/3 xl:w-1/3">
           <form ref={form} onSubmit={sendEmail}>
             <div className="form-group mb-6">
               <input

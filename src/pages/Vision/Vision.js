@@ -8,8 +8,6 @@ const Vision = (props) => {
 
   return (
     <div className="absolute flex mb-4 top-96 left-4 right-4 gap-8">
-      <button onClick={() => setValue (props.onSelection('asdf'))}>{value}</button>
-      {/* <button onClick={() => setValue (props.onOption('gggg'))}>{value}</button> */}
       <div className="w-1/2 flex justify-center flex-wrap">
         <div className="w-2/3">
           <blockquote className="text-5xl font-semibold italic text-center text-slate-900">

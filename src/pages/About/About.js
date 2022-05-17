@@ -1,6 +1,6 @@
 import { Fragment, useState } from "react";
 import Sakura from "../../assets/images/SakuraContrast.jpg";
-import Carousel from "../../components/Carousel/Carousel";
+import Accordion from "../../components/Accordion/Accordion";
 
 import Projects, { fourthProject, secondProject, thirdProject } from "./Projects";
 
@@ -39,7 +39,8 @@ const About = (props) => {
 
   return (
     <Fragment>
-    <div className="mx-8 relative top-80 grid grid-cols-4 gap-8">
+      <div className="mx-4">
+    <div className="relative top-80 grid grid-cols-2 gap-4 xl:grid-cols-4  xl:gap-8 w-full">
         <div className="outline hover:outline-2 rounded-md md:text-clip grow-0" onMouseEnter={onFirstHover} onMouseLeave={onFirstLeave}>
           {firstHover ? <div className="mx-4 my-2 md:h-24 xl:h-48 md:overflow-scroll xl:overflow-hidden">{<Projects />}</div> : <img src={Sakura} alt="" />}
         </div>
@@ -48,7 +49,7 @@ const About = (props) => {
             {secondHover ? <div  className="mx-4 my-2 h-48">{secondProject}</div> : <img src={Sakura} alt="" />}
           </div>
         </div>
-        <div className="outline hover:outline-2 rounded-md">
+        <div className="outline hover:outline-2 rounded-md col-start-1 col-end-2 xl:col-start-3 xl:col-end-4">
           <div onMouseEnter={onThirdHover} onMouseLeave={onThirdLeave}>
             {thirdHover ? <div className="mx-4 my-2 h-48">{thirdProject}</div> : <img src={Sakura} alt="" />}
           </div>
@@ -58,11 +59,15 @@ const About = (props) => {
             {fourthHover ? <div className="mx-4 my-2 h-48">{fourthProject}</div> : <img src={Sakura} alt="" />}
           </div>
         </div>
+        <div className="col-start-1 col-end-5 h-48">
+        <Accordion/>
+        </div>
+   
       </div>
-      <div className="relative top-96 container object-fit flex justify-end">
-      <Carousel/>
+    
       
       </div>
+    
       
       </Fragment>
   );
