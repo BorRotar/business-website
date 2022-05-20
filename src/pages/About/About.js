@@ -30,10 +30,10 @@ const About = (props) => {
   };
 
   const [fourthHover, setFourthHover] = useState(null);
-  const onFourthHover = () => {
+  const onFourthHover = setTimeout(() => {
     setFourthHover(true);
-  };
-  const onFourthLeave = () => {
+  }, 2000);
+  const onFourthLeave =() => {
     setFourthHover(false);
   };
 
@@ -42,7 +42,7 @@ const About = (props) => {
       <div className="mx-4">
     <div className="relative top-80 grid grid-cols-2 gap-4 xl:grid-cols-4  xl:gap-8 w-full">
         <div className="outline hover:outline-2 rounded-md md:text-clip grow-0" onMouseEnter={onFirstHover} onMouseLeave={onFirstLeave}>
-          {firstHover ? <div className="mx-4 my-2 md:h-24 xl:h-48 md:overflow-scroll xl:overflow-hidden">{<Projects />}</div> : <img src={Sakura} alt="" />}
+          {firstHover ? <div className="mx-4 my-2 md:h-24 xl:h-48 xl:overflow-hidden">{<Projects />}</div> : <img src={Sakura} alt="" />}
         </div>
         <div className="outline hover:outline-2 rounded-md">
           <div  onMouseEnter={onSecondHover} onMouseLeave={onSecondLeave}>
@@ -59,7 +59,7 @@ const About = (props) => {
             {fourthHover ? <div className="mx-4 my-2 h-48">{fourthProject}</div> : <img src={Sakura} alt="" />}
           </div>
         </div>
-        <div className="col-start-1 col-end-5 h-48">
+        <div className="relative col-start-1 col-end-5 h-48">
         <Accordion/>
         </div>
    
@@ -67,7 +67,7 @@ const About = (props) => {
     
       
       </div>
-    
+     
       
       </Fragment>
   );

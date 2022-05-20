@@ -30,6 +30,7 @@ const Contact = (props) => {
   };
   return (
     <Fragment>
+      
       <div className="relative top-96 flex justify-center w-100">
         <div className="block p-6 rounded-lg shadow-lg bg-white max-w-md w-2/3 xl:w-1/3">
           <form ref={form} onSubmit={sendEmail}>
@@ -176,7 +177,11 @@ const Contact = (props) => {
             </figcaption>
           </div>
         </figure>
+        <div className="absolute bottom-0 left-0 mx-2 xl:-left-96 ">
+      <p className="text-gray-600/25 text-sm">Website created by <a target="_blank" rel="noopener noreferrer" href="https://github.com/BorRotar">Bor Rotar</a></p>
+    </div>
       </div>
+     
     </Fragment>
   );
 };

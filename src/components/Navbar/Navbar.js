@@ -1,9 +1,11 @@
+import { Fragment } from "react";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
 
 
   return (
+    <Fragment>
     <div className="relative h-62 w-62">
       <div className="flex absolute inset-x-0 h-16 top-40  flex justify-center">
         <span className="bg-2xl text-3xl rounded-full border-3 relative grid grid-cols-3 divide-x bg-emerald-400 shadow-xl font-mono">
@@ -19,6 +21,8 @@ const Navbar = () => {
         </span>
       </div>
     </div>
+  
+    </Fragment>
   );
 };
 

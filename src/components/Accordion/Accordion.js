@@ -1,10 +1,12 @@
+import { Fragment } from 'react';
 import 'tw-elements';
 
 
-import Cropped from "../../assets/images/CroppedSpace.jpg";
+
 
 const Accordion = () => {
     return (
+      <Fragment>
       <div className="accordion" id="accordionExample">
   <div className="accordion-item bg-white border border-gray-200">
     <h2 className="accordion-header mb-0" id="headingOne">
@@ -108,6 +110,10 @@ const Accordion = () => {
     </div>
   </div>
 </div>
+ <div>
+ <p className="text-gray-600/25 text-sm">Website created by <a target="_blank" rel="noopener noreferrer" href="https://github.com/BorRotar">Bor Rotar</a></p>
+</div>
+</Fragment>
     )
 }
 
