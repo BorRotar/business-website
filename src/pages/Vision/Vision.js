@@ -12,7 +12,7 @@ const Vision = (props) => {
           <div className="w-2/3">
             <blockquote className="text-5xl font-semibold italic text-center text-slate-900">
               <span className="before:rounded-sm before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-emerald-500 relative inline-block">
-                <span className="relative text-white">
+                <span className="relative text-white animate-pulse 3s  ">
                   SUPER SUCCESSFUL BUSINESS
                 </span>
               </span>
@@ -32,7 +32,7 @@ const Vision = (props) => {
                 <Link
                   onClick={() => setValue(props.onOption("cccccc"))}
                   to="/contact"
-                  className="text-emerald-500 hover:text-emerald-600 transition duration-300 ease-in-out mb-4"
+                  className="transition ease-in-out delay-150 text-emerald-500 hover:text-emerald-600 transition duration-300 ease-in-out mb-4"
                 >
                   Success link
                 </Link>
@@ -41,7 +41,7 @@ const Vision = (props) => {
                 <Link
                   onClick={() => setValue(props.onOption("bbbbbb"))}
                   to="/contact"
-                  className="text-emerald-400 hover:text-emerald-500 transition duration-300 ease-in-out mb-4"
+                  className="transition ease-in-out delay-150 text-emerald-400 hover:text-emerald-500 transition duration-300 ease-in-out mb-4"
                 >
                   Success link
                 </Link>
@@ -50,7 +50,7 @@ const Vision = (props) => {
                 <Link
                   onClick={() => setValue(props.onOption("aaaaaaaa"))}
                   to="/contact"
-                  className="text-emerald-300 hover:text-emerald-400 transition duration-300 ease-in-out mb-4"
+                  className="transition ease-in-out delay-150 text-emerald-300 hover:text-emerald-400 transition duration-300 ease-in-out mb-4"
                 >
                   Success link
                 </Link>

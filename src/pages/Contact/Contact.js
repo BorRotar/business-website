@@ -3,9 +3,6 @@ import emailjs from "@emailjs/browser";
 import Cropped from "../../assets/images/CroppedSpace.jpg";
 
 const Contact = (props) => {
-  console.log(props.onSelection);
-  console.log(props.onOption);
-  console.log("logged in contact");
   const form = useRef();
 
   const sendEmail = (e) => {
