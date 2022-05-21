@@ -75,7 +75,7 @@ const Accordion = () => {
       </div>
     </div>
   </div>
-  <div className="accordion-item bg-white border border-gray-200">
+  <div className="accordion-item bg-white border border-gray-200 bg-sky-400">
     <h2 className="accordion-header mb-0" id="headingThree">
       <button className="
         accordion-button

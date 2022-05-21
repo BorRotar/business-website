@@ -43,7 +43,7 @@ const About = () => {
   return (
     <Fragment>
       <div className="mx-4">
-        <div className="relative top-80 grid grid-cols-2 gap-4 xl:grid-cols-4  xl:gap-8 w-full">
+        <div className="relative top-64 grid grid-cols-2 gap-4 xl:grid-cols-4  xl:gap-8 w-full">
           <div
             className="outline hover:outline-2 rounded-md md:text-clip grow-0 h-64"
             onMouseEnter={onFirstHover}

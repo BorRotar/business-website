@@ -6,8 +6,8 @@ const Navbar = () => {
 
   return (
     <Fragment>
-    <div className="relative h-62 w-62 rounded-full">
-      <div className="flex absolute inset-x-0 h-16 top-40  flex justify-center">
+    <div className="relative h-62 w-62 rounded-full bg-gradient-to-r from-sky-500 to-indigo-500">
+      <div className="flex absolute inset-x-0 h-16 top-24  flex justify-center">
         <span className="bg-2xl text-3xl rounded-full border-3 relative grid grid-cols-3 divide-x bg-emerald-400 shadow-xl font-mono">
           <button className="shadow-sm px-8 rounded-full  hover:bg-emerald-200">
             <Link to="/">Vision</Link>

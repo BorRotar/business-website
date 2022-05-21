@@ -1,7 +1,7 @@
 import React, { Fragment, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Cropped from "../../assets/images/CroppedSpace.jpg";
-
+import BackgroundLines  from "../../assets/images/diagonal-lines.svg"
 const Contact = (props) => {
   const form = useRef();
 
@@ -27,8 +27,8 @@ const Contact = (props) => {
   };
   return (
     <Fragment>
-      
-      <div className="relative top-96 flex justify-center w-100">
+      <div className="bg-gradient-to-r from-sky-500 to-indigo-500s">
+      <div className="relative top-64 flex justify-center w-100">
         <div className="block p-6 rounded-lg shadow-lg bg-white max-w-md w-2/3 xl:w-1/3">
           <form ref={form} onSubmit={sendEmail}>
             <div className="form-group mb-6">
@@ -152,8 +152,8 @@ const Contact = (props) => {
           </form>
         </div>
       </div>
-      <div className="relative top-96 md:left-4 xl:left-96 flex w-full justify-center w-100">
-        <figure className="bg-slate-100 rounded-xl p-8 dark:bg-slate-800 w-96">
+      <div className="relative top-64 md:left-4 xl:left-96 flex w-full justify-center w-100">
+        <figure className="bg-slate-100 rounded-xl p-8 dark:bg-slate-800 w-96 bg-sky-200">
           <img
             className="w-24 h-24 rounded-full"
             src={Cropped}
@@ -178,7 +178,7 @@ const Contact = (props) => {
       <p className="text-gray-600/25 text-sm">Website created by <a target="_blank" rel="noopener noreferrer" href="https://github.com/BorRotar">Bor Rotar</a></p>
     </div>
       </div>
-     
+      </div>
     </Fragment>
   );
 };

@@ -7,18 +7,19 @@ const Vision = (props) => {
 
   return (
     <Fragment>
-      <div className="absolute flex mb-4 top-96 left-4 right-4 gap-8">
+      <div className="">
+      <div className="absolute flex mb-4 top-64 left-4 right-4 gap-8 bg-gradient-to-r from-sky-500 to-indigo-500">
         <div className="w-1/2 flex justify-center flex-wrap">
           <div className="w-2/3">
             <blockquote className="text-5xl font-semibold italic text-center text-slate-900">
-              <span className="before:rounded-sm before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-emerald-500 relative inline-block">
-                <span className="relative text-white animate-pulse 3s  ">
+              <span className="before:rounded-sm before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-emerald-500 opacity-80 relative inline-block">
+                <span className="relative text-white">
                   SUPER SUCCESSFUL BUSINESS
                 </span>
               </span>
             </blockquote>
 
-            <p className="card text-justify my-2">
+            <p className="card text-justify my-2 bg-sky-100">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -28,7 +29,7 @@ const Vision = (props) => {
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
             <ul className="list-disc mx-4 my-4">
-              <li className=" text-2xl">
+              <li className=" text-2xl bg-sky-200">
                 <Link
                   onClick={() => setValue(props.onOption("cccccc"))}
                   to="/contact"
@@ -37,7 +38,7 @@ const Vision = (props) => {
                   Success link
                 </Link>
               </li>
-              <li className=" text-2xl">
+              <li className=" text-2xl bg-sky-300">
                 <Link
                   onClick={() => setValue(props.onOption("bbbbbb"))}
                   to="/contact"
@@ -46,7 +47,7 @@ const Vision = (props) => {
                   Success link
                 </Link>
               </li>
-              <li className=" text-2xl">
+              <li className=" text-2xl bg-sky-400">
                 <Link
                   onClick={() => setValue(props.onOption("aaaaaaaa"))}
                   to="/contact"
@@ -79,6 +80,7 @@ const Vision = (props) => {
             alt="Recycle logo"
           />
         </div>
+      </div>
       </div>
     </Fragment>
   );
