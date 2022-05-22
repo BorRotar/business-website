@@ -153,7 +153,7 @@ const Contact = (props) => {
         </div>
       </div>
       <div className="relative top-64 md:left-4 xl:left-96 flex w-full justify-center w-100">
-        <figure className="bg-slate-100 rounded-xl p-8 dark:bg-slate-800 w-96 bg-sky-200">
+        <figure className="bg-slate-100 rounded-xl p-8 dark:bg-slate-800 w-96 bg-gradient-to-r from-sky-500 to-indigo-500s">
           <img
             className="w-24 h-24 rounded-full"
             src={Cropped}

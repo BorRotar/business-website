@@ -7,19 +7,18 @@ const Vision = (props) => {
 
   return (
     <Fragment>
-      <div className="">
-      <div className="absolute flex mb-4 top-64 left-4 right-4 gap-8 bg-gradient-to-r from-sky-500 to-indigo-500">
+      <div className="absolute flex mb-4 top-64 left-4 right-4 gap-8 bg-gradient-to-r from-sky-500 to-indigo">
         <div className="w-1/2 flex justify-center flex-wrap">
           <div className="w-2/3">
             <blockquote className="text-5xl font-semibold italic text-center text-slate-900">
-              <span className="before:rounded-sm before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-emerald-500 opacity-80 relative inline-block">
+              <span className="before:rounded-sm before:block before:absolute before:-inset-1 before:-skew-y-3 before:bg-emerald-500 relative inline-block">
                 <span className="relative text-white">
                   SUPER SUCCESSFUL BUSINESS
                 </span>
               </span>
             </blockquote>
 
-            <p className="card text-justify my-2 bg-sky-100">
+            <p className="card text-justify my-4 opacity-80">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -28,30 +27,30 @@ const Vision = (props) => {
               nulla pariatur. Excepteur sint occaecat cupidatat non proident,
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
-            <ul className="list-disc mx-4 my-4">
-              <li className=" text-2xl bg-sky-200">
+            <ul className="mx-4 my-4">
+              <li className=" text-2xl bg-emerald-100 opacity-60 rounded-sm">
                 <Link
                   onClick={() => setValue(props.onOption("cccccc"))}
                   to="/contact"
-                  className="transition ease-in-out delay-150 text-emerald-500 hover:text-emerald-600 transition duration-300 ease-in-out mb-4"
+                  className="transition ease-in-out delay-150 text-sky-300 hover:text-emerald-600 transition duration-300 ease-in-out mb-4"
                 >
                   Success link
                 </Link>
               </li>
-              <li className=" text-2xl bg-sky-300">
+              <li className=" text-2xl bg-emerald-200 opacity-60 rounded-sm">
                 <Link
                   onClick={() => setValue(props.onOption("bbbbbb"))}
                   to="/contact"
-                  className="transition ease-in-out delay-150 text-emerald-400 hover:text-emerald-500 transition duration-300 ease-in-out mb-4"
+                  className="transition ease-in-out delay-150 text-sky-400 hover:text-emerald-500 transition duration-300 ease-in-out mb-4"
                 >
                   Success link
                 </Link>
               </li>
-              <li className=" text-2xl bg-sky-400">
+              <li className=" text-2xl bg-emerald-300 opacity-60 rounded-sm">
                 <Link
                   onClick={() => setValue(props.onOption("aaaaaaaa"))}
                   to="/contact"
-                  className="transition ease-in-out delay-150 text-emerald-300 hover:text-emerald-400 transition duration-300 ease-in-out mb-4"
+                  className="transition ease-in-out delay-150 text-sky-500 hover:text-emerald-400 transition duration-300 ease-in-out mb-4"
                 >
                   Success link
                 </Link>
@@ -80,7 +79,6 @@ const Vision = (props) => {
             alt="Recycle logo"
           />
         </div>
-      </div>
       </div>
     </Fragment>
   );
