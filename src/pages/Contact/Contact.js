@@ -27,7 +27,7 @@ const Contact = (props) => {
   };
   return (
     <Fragment>
-      <div className="bg-gradient-to-r from-sky-500 to-indigo-500s">
+      <div className="bg-gradient-to-r from-sky-400 to-indigo-500s">
       <div className="relative top-64 flex justify-center w-100">
         <div className="block p-6 rounded-lg shadow-lg bg-white max-w-md w-2/3 xl:w-1/3">
           <form ref={form} onSubmit={sendEmail}>
@@ -153,7 +153,7 @@ const Contact = (props) => {
         </div>
       </div>
       <div className="relative top-64 md:left-4 xl:left-96 flex w-full justify-center w-100">
-        <figure className="bg-slate-100 rounded-xl p-8 dark:bg-slate-800 w-96 bg-gradient-to-r from-sky-500 to-indigo-500s">
+        <figure className="bg-slate-100 rounded-xl p-8 dark:bg-slate-800 w-96 bg-gradient-to-r from-sky-500 to-indigo-200">
           <img
             className="w-24 h-24 rounded-full"
             src={Cropped}

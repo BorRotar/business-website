@@ -7,7 +7,7 @@ const Vision = (props) => {
 
   return (
     <Fragment>
-      <div className="absolute flex mb-4 top-64 left-4 right-4 gap-8 bg-gradient-to-r from-sky-500 to-indigo">
+      <div className="absolute flex mb-4 top-64 left-4 right-4 gap-8 bg-gradient-to-r from-sky-300 to-indigo">
         <div className="w-1/2 flex justify-center flex-wrap">
           <div className="w-2/3">
             <blockquote className="text-5xl font-semibold italic text-center text-slate-900">
@@ -18,7 +18,7 @@ const Vision = (props) => {
               </span>
             </blockquote>
 
-            <p className="card text-justify my-4 opacity-80">
+            <p className="card my-5 text-justify my-4 opacity-70">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
               enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -28,33 +28,37 @@ const Vision = (props) => {
               sunt in culpa qui officia deserunt mollit anim id est laborum.
             </p>
             <ul className="mx-4 my-4">
-              <li className=" text-2xl bg-emerald-100 opacity-60 rounded-sm">
-                <Link
+            <Link
                   onClick={() => setValue(props.onOption("cccccc"))}
                   to="/contact"
                   className="transition ease-in-out delay-150 text-sky-300 hover:text-emerald-600 transition duration-300 ease-in-out mb-4"
                 >
+              <li className=" text-2xl bg-emerald-100 opacity-60 rounded-sm">
+             
                   Success link
+                  </li>
                 </Link>
-              </li>
-              <li className=" text-2xl bg-emerald-200 opacity-60 rounded-sm">
                 <Link
                   onClick={() => setValue(props.onOption("bbbbbb"))}
                   to="/contact"
                   className="transition ease-in-out delay-150 text-sky-400 hover:text-emerald-500 transition duration-300 ease-in-out mb-4"
                 >
+              <li className=" text-2xl bg-emerald-200 opacity-60 rounded-sm">
+              
                   Success link
+                  </li>
                 </Link>
-              </li>
-              <li className=" text-2xl bg-emerald-300 opacity-60 rounded-sm">
                 <Link
                   onClick={() => setValue(props.onOption("aaaaaaaa"))}
                   to="/contact"
                   className="transition ease-in-out delay-150 text-sky-500 hover:text-emerald-400 transition duration-300 ease-in-out mb-4"
                 >
+              <li className=" text-2xl bg-emerald-300 opacity-60 rounded-sm">
+               
                   Success link
+                  </li>
                 </Link>
-              </li>
+              
             </ul>
             <div className="absolute bottom-2 left-0 -my-2">
               <p className="text-gray-600/25 text-sm">

@@ -8,7 +8,7 @@ const Accordion = () => {
     return (
       <Fragment>
       <div className="accordion" id="accordionExample">
-  <div className="accordion-item bg-white border border-gray-200">
+  <div className="accordion-item bg-white border border-gray-200 bg-gradient-to-r from-sky-200 to-indigo">
     <h2 className="accordion-header mb-0" id="headingOne">
       <button className="
         accordion-button
@@ -23,7 +23,7 @@ const Accordion = () => {
         border-0
         rounded-none
         transition
-        focus:outline-none
+        focus:outline-none bg-gradient-to-r from-emerald-100 to-indigo
       " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
         aria-controls="collapseOne">
         Accordion Item #1
@@ -41,7 +41,7 @@ const Accordion = () => {
       </div>
     </div>
   </div>
-  <div className="accordion-item bg-white border border-gray-200">
+  <div className="accordion-item bg-white border border-gray-200 bg-gradient-to-r from-sky-200 to-indigo">
     <h2 className="accordion-header mb-0" id="headingTwo">
       <button className="
         accordion-button
@@ -57,7 +57,7 @@ const Accordion = () => {
         border-0
         rounded-none
         transition
-        focus:outline-none
+        focus:outline-none bg-gradient-to-r from-emerald-100 to-indigo
       " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
         aria-controls="collapseTwo">
         Accordion Item #2
@@ -75,7 +75,7 @@ const Accordion = () => {
       </div>
     </div>
   </div>
-  <div className="accordion-item bg-white border border-gray-200 bg-sky-400">
+  <div className="accordion-item bg-white border border-gray-200  bg-gradient-to-r from-sky-200 to-indigo">
     <h2 className="accordion-header mb-0" id="headingThree">
       <button className="
         accordion-button
@@ -91,7 +91,7 @@ const Accordion = () => {
         border-0
         rounded-none
         transition
-        focus:outline-none
+        focus:outline-none bg-gradient-to-r from-emerald-100 to-indigo
       " type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
         aria-controls="collapseThree">
         Accordion Item #3

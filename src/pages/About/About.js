@@ -42,10 +42,11 @@ const About = () => {
 
   return (
     <Fragment>
+      <div className="bg-gradient-to-r from-sky-400 to-indigo">
       <div className="mx-4">
         <div className="relative top-64 grid grid-cols-2 gap-4 xl:grid-cols-4  xl:gap-8 w-full">
           <div
-            className="outline hover:outline-2 rounded-md md:text-clip grow-0 h-64"
+            className="outline hover:outline-2 rounded-md md:text-clip grow-0 h-64 bg-gradient-to-r from-sky-200 to-indigo"
             onMouseEnter={onFirstHover}
             onMouseLeave={onFirstLeave}
           >
@@ -55,7 +56,7 @@ const About = () => {
               <img className="h-full" src={Sakura} alt="" />
             )}
           </div>
-          <div className="outline hover:outline-2 rounded-md md:text-clip grow-0 h-64"
+          <div className="outline hover:outline-2 rounded-md md:text-clip grow-0 h-64 bg-gradient-to-r from-sky-200 to-indigo"
             onMouseEnter={onSecondHover} onMouseLeave={onSecondLeave}>
               {secondHover ? (
                 <div className="mx-4 my-2 xl:overflow-hidden">
@@ -66,14 +67,14 @@ const About = () => {
               )}
           
           </div>
-          <div className="outline hover:outline-2 rounded-md col-start-1 col-end-2 xl:col-start-3 xl:col-end-4 h-64" onMouseEnter={onThirdHover} onMouseLeave={onThirdLeave}>
+          <div className="outline hover:outline-2 rounded-md col-start-1 col-end-2 xl:col-start-3 xl:col-end-4 h-64 bg-gradient-to-r from-sky-200 to-indigo" onMouseEnter={onThirdHover} onMouseLeave={onThirdLeave}>
               {thirdHover ? (
                 <div className="mx-4 my-2 h-48">{thirdProject}</div>
               ) : (
                 <img className="h-full" src={Sakura} alt="" />
               )}
           </div>
-          <div className="outline hover:outline-2 rounded-md h-64" onMouseEnter={onFourthHover} onMouseLeave={onFourthLeave}>
+          <div className="outline hover:outline-2 rounded-md h-64 bg-gradient-to-r from-sky-100 to-indigo" onMouseEnter={onFourthHover} onMouseLeave={onFourthLeave}>
               {fourthHover ? (
                 <div className="mx-4 my-2 h-48">{fourthProject}</div>
               ) : (
@@ -84,6 +85,7 @@ const About = () => {
             <Accordion />
           </div>
         </div>
+      </div>
       </div>
     </Fragment>
   );
