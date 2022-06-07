@@ -8,7 +8,7 @@ import Vision from "./pages/Vision/Vision";
 
 
 function App() {
-const [option, setOption] = useState("Please select an option");
+const [option, setOption] = useState("Izberite želeno možnost");
 const selectionHandler = (enteredSelection) => {
   
   console.log(`${enteredSelection} in App`);

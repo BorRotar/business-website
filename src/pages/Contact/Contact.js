@@ -2,6 +2,9 @@ import React, { Fragment, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Cropped from "../../assets/images/CroppedSpace.jpg";
 import BackgroundLines  from "../../assets/images/diagonal-lines.svg"
+import Profile  from "../../assets/images/profile.jpg"
+
+
 const Contact = (props) => {
   const form = useRef();
 
@@ -17,11 +20,11 @@ const Contact = (props) => {
       )
       .then(
         () => {
-          alert("Message sent successfully!");
+          alert("Sporočilo je bilo uspešno poslano!");
           window.location.reload(false);
         },
         () => {
-          alert("Something went wrong, please try again");
+          alert("Prišlo je do napake, prosim poskusite ponovno");
         }
       );
   };
@@ -95,9 +98,10 @@ const Contact = (props) => {
                 aria-label="Default select example"
               >
                 <option defaultValue>{props.onOption}</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+                <option value="1">Svetovanje ISO Standard</option>
+                <option value="2">Sistemi odpadkov</option>
+                <option value="3">Izobraževanje</option>
+                <option value="4">Drugo</option>
               </select>
             </div>
             <div className="form-group mb-6">
@@ -156,22 +160,19 @@ const Contact = (props) => {
         <figure className="bg-slate-100 rounded-xl p-8 dark:bg-slate-800 w-96 bg-gradient-to-r from-sky-500 to-indigo-200">
           <img
             className="w-24 h-24 rounded-full"
-            src={Cropped}
+            src={Profile}
             alt=""
             width="384"
             height="512"
           />
           <div className="pt-6 space-y-4">
             <blockquote>
-              <p className="text-lg">Asdf Ffff</p>
-              <p className="text-lg">Address 34</p>
-              <p className="text-lg">email@email</p>
-              <p className="text-lg">123 123 123 123</p>
+              <p className="text-lg">Dr. Rok Rotar</p>
+              <p className="text-lg">Univ.dipl.kem.</p>
+              <p className="text-lg">Ljubljana, Slovenija</p>
+              <p className="text-lg">+386 51 371 676</p>
             </blockquote>
-            <figcaption>
-              <div>Consulting LLC</div>
-              <div>Ljubljana, Slovenia</div>
-            </figcaption>
+           
           </div>
         </figure>
         <div className="absolute bottom-0 left-0 mx-2 xl:-left-96 ">

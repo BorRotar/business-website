@@ -10,12 +10,12 @@ const Navbar = () => {
       <div className="flex absolute inset-x-0 h-16 top-24  flex justify-center">
         <span className="bg-2xl text-3xl rounded-full border-3 relative grid grid-cols-3 divide-x bg-emerald-400 opacity-90 shadow-xl font-mono">
         <Link to="/" className=" flex justify-center px-8 rounded-l-full  hover:bg-emerald-200">
-            <p className="my-4">Vision</p>
+            <p className="my-4">Domov</p>
           </Link>
           <Link to="/about" className="flex justify-center hover:bg-emerald-200">
-            <p className="my-4">About</p></Link>
+            <p className="my-4">Izkušnje</p></Link>
             <Link to="/contact" className="flex justify-center px-8 rounded-r-full  hover:bg-emerald-200 ">
-            <p className="my-4">Contact</p></Link>
+            <p className="my-4">Kontakt</p></Link>
           
         </span>
       </div>

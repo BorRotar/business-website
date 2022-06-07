@@ -26,19 +26,14 @@ const Accordion = () => {
         focus:outline-none bg-gradient-to-r from-emerald-100 to-indigo
       " type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
         aria-controls="collapseOne">
-        Accordion Item #1
+        <strong>ISO 9001</strong>
       </button>
     </h2>
     <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne"
       data-bs-parent="#accordionExample">
       <div className="accordion-body py-4 px-5">
-        <strong>This is the first item's accordion body.</strong> It is shown by default,
-        until the collapse plugin adds the appropriate classes that we use to style each
-        element. These classes control the overall appearance, as well as the showing and
-        hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-        our default variables. It's also worth noting that just about any HTML can go within
-        the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
+      <strong>ISO 9001</strong> je mednarodni standard za vodenje kakovosti; primeren je za vse organizacije iz različnih gospodarskih sektorjev in dejavnosti. ISO 9001 temelji na osmih načelih vodenja kakovosti, ki so bistvena za dobro poslovno prakso.
+        </div>
     </div>
   </div>
   <div className="accordion-item bg-white border border-gray-200 bg-gradient-to-r from-sky-200 to-indigo">
@@ -60,18 +55,16 @@ const Accordion = () => {
         focus:outline-none bg-gradient-to-r from-emerald-100 to-indigo
       " type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
         aria-controls="collapseTwo">
-        Accordion Item #2
+        <strong>ISO 14001</strong>
       </button>
     </h2>
     <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo"
       data-bs-parent="#accordionExample">
       <div className="accordion-body py-4 px-5">
-        <strong>This is the second item's accordion body.</strong> It is hidden by default,
-        until the collapse plugin adds the appropriate classes that we use to style each
-        element. These classes control the overall appearance, as well as the showing and
-        hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-        our default variables. It's also worth noting that just about any HTML can go within
-        the <code>.accordion-body</code>, though the transition does limit overflow.
+
+      <strong>ISO 14001</strong> je mednarodni standard za sisteme ravnanja z okoljem, ki zajema obvladovanje okoljskih vidikov proizvodne ali storitvene dejavnosti.
+
+Standard ISO 14001 je eno od najpomembnejših orodij, ki ga uporabljajo organizacije po celem svetu, da bi odgovorile na izzive, ki jih njihove dejavnosti predstavljajo za okolje. Cilj standarda je ohranjanje okolja in primernih življenjskih pogojev za nadaljnje generacije. Obsega izpolnjevanje zakonskih zahtev, učinkovito izkoriščanje virov, ter preprečevanje onesnaževanja okolja. 
       </div>
     </div>
   </div>
@@ -94,18 +87,14 @@ const Accordion = () => {
         focus:outline-none bg-gradient-to-r from-emerald-100 to-indigo
       " type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
         aria-controls="collapseThree">
-        Accordion Item #3
+        <strong>Ravnanje z odpadki</strong>
       </button>
     </h2>
     <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree"
       data-bs-parent="#accordionExample">
       <div className="accordion-body py-4 px-5">
-        <strong>This is the third item's accordion body.</strong> It is hidden by default,
-        until the collapse plugin adds the appropriate classes that we use to style each
-        element. These classes control the overall appearance, as well as the showing and
-        hiding via CSS transitions. You can modify any of this with custom CSS or overriding
-        our default variables. It's also worth noting that just about any HTML can go within
-        the <code>.accordion-body</code>, though the transition does limit overflow.
+      
+      Ravnanje z nevarnimi odpadki vsebuje postopke fizikalne in kemijske obdelave, toplotne, biološke obdelave ali katerekoli druge ustrezne metode ravnanja z nevarnimi odpadki, vključeno je tudi odlaganje nevarnih odpadkov (odlagališča nevarnih odpadkov, shranjevanje v zabojnike, podzemno trajno odlaganje oziroma katerokoli drugo metodo odlaganja). 
       </div>
     </div>
   </div>
