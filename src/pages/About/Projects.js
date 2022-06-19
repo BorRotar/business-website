@@ -1,5 +1,5 @@
 const Projects = () => {
-  return "1998-2002: Iskra Feriti d.o.o.: vpeljava zahtev in uspešna certifikacija sistema vodenja po ISO 14001."};
+  return "Osnove HTML kjer sem začel spoznavati leta 2020, ko me je začelo zanimati programiranje."};
 
 export const secondProject =
  "Skrbnik sistema kakovosti Gorenje Surovina d.o.o., vpeljava in vodenje sistema celovitega ravnanja z odpadki Renault-Revoz d.d.&TPV d.d., vpeljava sistema ravnanja z okoljem Iskra Feriti d.o.o."

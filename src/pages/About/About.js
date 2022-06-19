@@ -1,10 +1,10 @@
 import { Fragment, useState } from "react";
-import Sakura from "../../assets/images/SakuraContrast.jpg";
+
 import Accordion from "../../components/Accordion/Accordion";
-import Surovina from "../../assets/images/surovina.png"
-import Iskra from "../../assets/images/iskra.png"
-import Erudio from "../../assets/images/erudio.png"
-import Kemis from "../../assets/images/kemis.png"
+import Html from "../../assets/images/html.png";
+import Css from "../../assets/images/css.png";
+import Js from "../../assets/images/js.png";
+import React from "../../assets/images/react.png";
 
 import Projects, {
   fourthProject,
@@ -57,7 +57,7 @@ const About = () => {
             {firstHover ? (
               <div className="mx-4 my-2 xl:overflow-hidden">{<Projects />}</div>
             ) : (
-              <img className="h-full" src={Iskra} alt="" />
+              <img className="mx-auto h-full justify-center" src={Html} alt="" />
             )}
           </div>
           <div className="outline hover:outline-2 rounded-md md:text-clip grow-0 h-64 bg-gradient-to-r from-sky-200 to-indigo"
@@ -67,7 +67,7 @@ const About = () => {
                   {secondProject}
                 </div>
               ) : (
-                <img className="h-full" src={Surovina} alt="" />
+                <img className="mx-auto h-full" src={Css} alt="" />
               )}
           
           </div>
@@ -75,14 +75,14 @@ const About = () => {
               {thirdHover ? (
                 <div className="mx-4 my-2 h-48">{thirdProject}</div>
               ) : (
-                <img className="h-full" src={Erudio} alt="" />
+                <img className="mx-auto h-full" src={Js} alt="" />
               )}
           </div>
           <div className="outline hover:outline-2 rounded-md h-64 bg-gradient-to-r from-sky-100 to-indigo" onMouseEnter={onFourthHover} onMouseLeave={onFourthLeave}>
               {fourthHover ? (
                 <div className="mx-4 my-2 h-48">{fourthProject}</div>
               ) : (
-                <img className="h-full" src={Kemis} alt="" />
+                <img className="mx-auto h-full" src={React} alt="" />
               )}
           </div>
           <div className="relative col-start-1 col-end-5 h-48">

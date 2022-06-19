@@ -1,8 +1,8 @@
 import React, { Fragment, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import Cropped from "../../assets/images/CroppedSpace.jpg";
-import BackgroundLines  from "../../assets/images/diagonal-lines.svg"
-import Profile  from "../../assets/images/profile.jpg"
+import Html  from "../../assets/images/html.png"
+import Sakura  from "../../assets/images/SakuraContrast.jpg"
 
 
 const Contact = (props) => {
@@ -160,7 +160,7 @@ const Contact = (props) => {
         <figure className="bg-slate-100 rounded-xl p-8 dark:bg-slate-800 w-96 bg-gradient-to-r from-sky-500 to-indigo-200">
           <img
             className="w-24 h-24 rounded-full"
-            src={Profile}
+            src={Html}
             alt=""
             width="384"
             height="512"
