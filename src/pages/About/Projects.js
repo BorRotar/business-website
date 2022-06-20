@@ -2,11 +2,11 @@ const Projects = () => {
   return "Osnove HTML kjer sem začel spoznavati leta 2020, ko me je začelo zanimati programiranje."};
 
 export const secondProject =
- "Skrbnik sistema kakovosti Gorenje Surovina d.o.o., vpeljava in vodenje sistema celovitega ravnanja z odpadki Renault-Revoz d.d.&TPV d.d., vpeljava sistema ravnanja z okoljem Iskra Feriti d.o.o."
+ "CSS sem uporabljal kot dopolnitev osnovne sestave spletnih strani."
  export const thirdProject =
-  "Kot imenovani predavatelj Erudio Višje strokovne šole izvajam osnovno in specializirano izobraževanje, na osnovi 20 let izkušenj dela z odpadki"
+  "V Javascript sem se poglobil z Udemy tečaji in Freecodecamp, ustvaril pa sem tudi svoj (začetniški) program za pisanje urnikov"
 export const fourthProject =
-  "2012-2015: Kemis d.o.o., Srbija: priprava, vpeljava, usposabljanje in notranja ter zunanja presoja, do uspešne ISO 9001, ISO 14001 in BS OHSAS certifikacije."
+  "React me je pričel zanimati v letu 2021 s tem ko sem bolj spoznavaj JS in vse več zmogljivosti tega jezika. To mi je omogočilo tudi razumevanje osnov React-a."
 export const fifthProject =
-  "Kot imenovani predavatelj Erudio Višje strokovne šole izvajam osnovno in specializirano izobraževanje, na osnovi 20 let izkušenj dela z odpadki"
+  ""
 export default Projects;

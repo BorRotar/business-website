@@ -53,7 +53,7 @@ const Contact = (props) => {
         m-0
         focus:text-gray-700 focus:bg-white focus:border-emerald-600 focus:outline-none"
                 id="exampleInput7"
-                placeholder="Name"
+                placeholder="Ime"
               />
             </div>
             <div className="form-group mb-6">
@@ -75,7 +75,7 @@ const Contact = (props) => {
         m-0
         focus:text-gray-700 focus:bg-white focus:border-emerald-600 focus:outline-none"
                 id="exampleInput8"
-                placeholder="Email address"
+                placeholder="Email naslov"
               />
             </div>
             <div className="form-group mb-6" >
@@ -98,9 +98,9 @@ const Contact = (props) => {
                 aria-label="Default select example"
               >
                 <option defaultValue>{props.onOption}</option>
-                <option value="1">Svetovanje ISO Standard</option>
-                <option value="2">Sistemi odpadkov</option>
-                <option value="3">Izobraževanje</option>
+                <option value="1">HTML</option>
+                <option value="2">CSS</option>
+                <option value="3">Javascript</option>
                 <option value="4">Drugo</option>
               </select>
             </div>
@@ -126,7 +126,7 @@ const Contact = (props) => {
       "
                 id="exampleFormControlTextarea13"
                 rows="3"
-                placeholder="Message"
+                placeholder="Sporočilo"
               ></textarea>
             </div>
             <button
@@ -151,7 +151,7 @@ const Contact = (props) => {
       duration-150
       ease-in-out"
             >
-              Send
+              Pošlji
             </button>
           </form>
         </div>
@@ -167,10 +167,11 @@ const Contact = (props) => {
           />
           <div className="pt-6 space-y-4">
             <blockquote>
-              <p className="text-lg">Dr. Rok Rotar</p>
-              <p className="text-lg">Univ.dipl.kem.</p>
+              <p className="text-lg">Bor Rotar</p>
               <p className="text-lg">Ljubljana, Slovenija</p>
-              <p className="text-lg">+386 51 371 676</p>
+              <a href="https://www.linkedin.com/in/bor-rotar-878206226/" className="text-lg">Linkedin</a>
+              
+              
             </blockquote>
            
           </div>
