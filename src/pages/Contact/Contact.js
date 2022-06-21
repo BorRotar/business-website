@@ -1,6 +1,6 @@
 import React, { Fragment, useRef } from "react";
 import emailjs from "@emailjs/browser";
-import Cropped from "../../assets/images/CroppedSpace.jpg";
+import Profile from "../../assets/images/LinkProfile.jpg";
 import Html  from "../../assets/images/html.png"
 import Sakura  from "../../assets/images/SakuraContrast.jpg"
 
@@ -160,7 +160,7 @@ const Contact = (props) => {
         <figure className="bg-slate-100 rounded-xl p-8 dark:bg-slate-800 w-96 bg-gradient-to-r from-sky-500 to-indigo-200">
           <img
             className="w-24 h-24 rounded-full"
-            src={Html}
+            src={Profile}
             alt=""
             width="384"
             height="512"
@@ -169,7 +169,7 @@ const Contact = (props) => {
             <blockquote>
               <p className="text-lg">Bor Rotar</p>
               <p className="text-lg">Ljubljana, Slovenija</p>
-              <a href="https://www.linkedin.com/in/bor-rotar-878206226/" className="text-lg">Linkedin</a>
+              <a href="https://www.linkedin.com/in/bor-rotar-878206226" target="_blank" className="text-lg">Linkedin</a>
               
               
             </blockquote>

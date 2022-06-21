@@ -1,6 +1,7 @@
 import { Fragment, useState } from "react";
 import { Link } from "react-router-dom";
-import Sakura from "../../assets/images/SakuraContrast.jpg";
+import Welcome from "../../assets/images/welcome.png";
+import Profile from "../../assets/images/LinkProfile.jpg";
 
 const Vision = (props) => {
   const [value, setValue] = useState("Please choose an  option");
@@ -20,39 +21,39 @@ const Vision = (props) => {
 
             <p className="card my-5 text-justify my-4 opacity-70">
               
-             Moje ime je Bor Rotar. Zelo rad se učim novih tehnologij in postavljam svoje projekte. Vedno me razveseli ko dosežen želen rezultat pri neki kodi in ta ne pokvari vseh ostalih elementov :D
+             Moje ime je Bor Rotar. Zelo rad se učim novih tehnologij in postavljam svoje projekte. Vedno me razveseli ko dosežen želen rezultat pri neki kodi in ta ne pokvari vseh ostalih elementov.
               
               <h1 className="italic underline decoration-emerald-400 my-2">Spodaj lahko izbereš kateri element bo izpolnjen v kontaktnem obrazcu</h1>
             </p>
             <ul className="mx-4 my-4">
             <Link
-                  onClick={() => setValue(props.onOption("HTML heroj"))}
+                  onClick={() => setValue(props.onOption("HTML"))}
                   to="/contact"
                   className="transition ease-in-out delay-150 text-sky-500 hover:text-emerald-600 transition duration-300 ease-in-out mb-4"
                 >
               <li className=" text-2xl bg-emerald-100 opacity-60 rounded-sm">
              
-                  HTML heroj
+                  HTML
                   </li>
                 </Link>
                 <Link
-                  onClick={() => setValue(props.onOption("JS legenda"))}
+                  onClick={() => setValue(props.onOption("JS"))}
                   to="/contact"
                   className="transition ease-in-out delay-150 text-sky-600 hover:text-emerald-500 transition duration-300 ease-in-out mb-4"
                 >
               <li className=" text-2xl bg-emerald-200 opacity-60 rounded-sm">
               
-                  JS legenda
+                  JS
                   </li>
                 </Link>
                 <Link
-                  onClick={() => setValue(props.onOption("React navdušenec"))}
+                  onClick={() => setValue(props.onOption("React"))}
                   to="/contact"
                   className="transition ease-in-out delay-150 text-sky-700 hover:text-emerald-400 transition duration-300 ease-in-out mb-4"
                 >
               <li className=" text-2xl bg-emerald-300 opacity-60 rounded-sm">
                
-                  React navdušenec
+                  React
                   </li>
                 </Link>
               
@@ -76,7 +77,7 @@ const Vision = (props) => {
           <img
             className="w-3/5"
             // color: #67E8F9
-            src={Sakura}
+            src={Welcome}
             alt="Recycle logo"
           />
         </div>
